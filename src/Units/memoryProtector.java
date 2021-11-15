@@ -44,6 +44,5 @@ public class memoryProtector extends Unit implements Updatable {
 	@Override
 	public boolean useUnit() {
 		return false;
-	}
-		
+	}	
 }
