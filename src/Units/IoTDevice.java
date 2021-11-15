@@ -32,16 +32,8 @@ public class IoTDevice extends Instrument implements Upgradable, Updatable {
 		return numOfIoTDevice;
 	}
 
-	public void setNumOfIoTDevice(int numOfIoTDevice) {
-		this.numOfIoTDevice = numOfIoTDevice;
-	}
-
 	public ArrayList<Integer> getCapacityOfIoTDevice() {
 		return capacityOfIoTDevice;
-	}
-
-	public void setCapacityOfIoTDevice(ArrayList<Integer> capacityOfIoTDevice) {
-		this.capacityOfIoTDevice = capacityOfIoTDevice;
 	}
 
 	public int calcPowerUsage() {
