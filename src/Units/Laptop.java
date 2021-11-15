@@ -1,5 +1,4 @@
 package Units;
-
 public class Laptop extends Instrument implements Updatable {
 
 	public Laptop(double price, double capacity, double power) {
