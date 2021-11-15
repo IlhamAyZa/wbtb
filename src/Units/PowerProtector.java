@@ -15,16 +15,8 @@ public class PowerProtector extends Unit implements Upgradable {
 		return powerLevel;
 	}
 
-	public void setPowerLevel(double powerLevel) {
-		this.powerLevel = powerLevel;
-	}
-
 	public boolean isHeld() {
 		return isHeld;
-	}
-
-	public void setHeld(boolean isHeld) {
-		this.isHeld = isHeld;
 	}
 
 	@Override
@@ -44,12 +36,13 @@ public class PowerProtector extends Unit implements Upgradable {
 				+ "  |  Power Capacity : " + powerCapacity;
 	}
 
-	public double deCharge(double powerUsage) {
+	public double DeCharge(double powerUsage) {
 		if (powerLevel >= powerUsage) {
 			powerLevel -= powerUsage;
 
 			return 0;
 		} else {
+			powerUsage -= powerLevel;
 			powerLevel = 0;
 			return powerUsage;
 		}
