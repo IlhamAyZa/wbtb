@@ -7,7 +7,12 @@ public class PowerProtector extends Unit implements Upgradable {
 
 	public PowerProtector(double unitPrice, double powerCapacity, double powerLevel) {
 		super(unitPrice, powerCapacity);
-		this.powerLevel = powerLevel;
+		if( powerLevel <= 0){
+			this.powerLevel = 0;
+		}
+		else{
+			this.powerLevel = powerLevel;
+		}
 		isHeld = false;
 	}
 
