@@ -26,11 +26,8 @@ public class PowerProtector extends Unit implements Upgradable {
 
 	@Override
 	public boolean useUnit() {
-		if (isHeld) {
-			isHeld = false;
-		} else {
-			isHeld = true;
-		}
+		
+		isHeld = true;
 
 		return isHeld;
 	}
