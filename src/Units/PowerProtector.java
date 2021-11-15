@@ -36,7 +36,7 @@ public class PowerProtector extends Unit implements Upgradable {
 				+ "  |  Power Capacity : " + powerCapacity;
 	}
 
-	public double DeCharge(double powerUsage) {
+	public double deCharge(double powerUsage) {
 		if (powerLevel >= powerUsage) {
 			powerLevel -= powerUsage;
 
