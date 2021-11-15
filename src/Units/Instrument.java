@@ -31,10 +31,6 @@ public class Instrument extends Unit {
 		return powerAmount;
 	}
 
-	public void setPowerAmount(double powerAmount) {
-		this.powerAmount = powerAmount;
-	}
-
 	@Override
 	public String toString() {
 		return "instrument price : " + super.getUnitPrice() + "  |  capacity : " + super.getPowerCapacity()
