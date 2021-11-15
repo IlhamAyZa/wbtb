@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class IoTDevice extends Instrument implements Upgradable, Updatable {
 
 	private int numOfIoTDevice;
-	private ArrayList<Integer> capacityOfIoTDevice = new ArrayList<>(2);
+	private ArrayList<Integer> capacityOfIoTDevice = new Array<>(2);
 
 	public IoTDevice(double price, double capacity, double power, int numOfIoTDevice) {
 		super(price, capacity, power);
