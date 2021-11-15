@@ -2,7 +2,7 @@ package Units;
 
 public abstract class Unit {
 
-	protected static int num_0f_units = 0;
+	protected static int unitQuantity = 0;
 	protected double unitPrice;
 	protected double powerCapacity;
 
@@ -20,27 +20,18 @@ public abstract class Unit {
 			this.powerCapacity = powerCapacity;
 		}
 
-		num_0f_units++;
+		unitQuantity++;
 	}
 
 	public static int getUnitQuantity() {
-		return num_0f_units;
+		return unitQuantity;
 	}
 
 	public double getUnitPrice() {
 		return unitPrice;
 	}
-
-	public void setUnitPrice(double unitPrice) {
-		this.unitPrice = unitPrice;
-	}
-
 	public double getPowerCapacity() {
 		return powerCapacity;
-	}
-
-	public void setPowerCapacity(double powerCapacity) {
-		this.powerCapacity = powerCapacity;
 	}
 
 	public abstract boolean useUnit();
